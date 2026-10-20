@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniruddh Pratap Singh | Quantum Portfolio</title>
+  <meta name="description" content="Personal portfolio of Aniruddh Pratap Singh - Chemistry Graduate, Tech Enthusiast, and Multi-domain Professional.">
+  <meta name="theme-color" content="#040711">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Aniruddh Pratap Singh | Portfolio">
+  <meta property="og:description" content="B.Sc. Chemistry Graduate, EV Technician Certified, Tech & Systems Enthusiast.">
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon & Touch Icon -->
+  <link rel="icon" type="image/jpeg" href="Blue_Phoenix.jpg">
+  <link rel="apple-touch-icon" href="Blue_Phoenix.jpg">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Reading Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Cosmic Volumetric Plasma Ambient Orbs -->
+  <div class="plasma-mesh-container" aria-hidden="true">
+    <div class="plasma-orb orb-1"></div>
+    <div class="plasma-orb orb-2"></div>
+    <div class="plasma-orb orb-3"></div>
+  </div>
+
+  <!-- Hypnotic Quantum Plasma Canvas -->
+  <canvas id="plasma-canvas" aria-hidden="true"></canvas>
+
+  <!-- Mobile Backdrop Veil -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+
+  <!-- Off-Canvas Cyber-Glass Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <div class="brand-logo-frame drawer-logo-frame">
+          <img src="Blue_Phoenix.jpg" alt="Blue Phoenix" class="brand-logo-img">
+          <span class="logo-glow-ring"></span>
+        </div>
+        <div class="drawer-brand-text">
+          <span class="drawer-brand-name">Aniruddh P. Singh</span>
+          <span class="drawer-brand-status">
+            <span class="status-dot"></span> System Online
+          </span>
+        </div>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Close navigation menu">
+        <i class="fas fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-divider"></div>
+
+    <nav class="drawer-nav">
+      <ul class="drawer-links">
+        <li>
+          <a href="#about" class="drawer-link">
+            <span class="drawer-link-idx">01</span>
+            <span class="drawer-link-icon"><i class="fas fa-user-astronaut"></i></span>
+            <span class="drawer-link-label">About</span>
+            <i class="fas fa-chevron-right drawer-chevron"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="drawer-link">
+            <span class="drawer-link-idx">02</span>
+            <span class="drawer-link-icon"><i class="fas fa-briefcase"></i></span>
+            <span class="drawer-link-label">Experience</span>
+            <i class="fas fa-chevron-right drawer-chevron"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="drawer-link">
+            <span class="drawer-link-idx">03</span>
+            <span class="drawer-link-icon"><i class="fas fa-graduation-cap"></i></span>
+            <span class="drawer-link-label">Education</span>
+            <i class="fas fa-chevron-right drawer-chevron"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="drawer-link">
+            <span class="drawer-link-idx">04</span>
+            <span class="drawer-link-icon"><i class="fas fa-atom"></i></span>
+            <span class="drawer-link-label">Skills &amp; Tech</span>
+            <i class="fas fa-chevron-right drawer-chevron"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#hobbies" class="drawer-link">
+            <span class="drawer-link-idx">05</span>
+            <span class="drawer-link-icon"><i class="fas fa-compass"></i></span>
+            <span class="drawer-link-label">Passions</span>
+            <i class="fas fa-chevron-right drawer-chevron"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="drawer-cta-wrapper">
+        <a href="#contact" class="drawer-cta-btn">
+          <span><i class="fas fa-paper-plane"></i> Initiate Contact</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </nav>
+
+    <div class="drawer-footer">
+      <div class="drawer-socials">
+        <a href="https://github.com/aniruddh-2004" target="_blank" rel="noopener noreferrer" class="drawer-social-btn" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/anurudh-pratap-singh-a968b2207" target="_blank" rel="noopener noreferrer" class="drawer-social-btn" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:kunwarvisvajeetsingh1234567@gmail.com" class="drawer-social-btn" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <p class="drawer-footer-text">Quantum Interface &bull; 2026</p>
+    </div>
+  </aside>
+
+  <div class="site-wrapper">
+
+    <!-- Floating Capsule Navigation Bar with Architectural Spacing -->
+    <header class="site-header">
+      <nav class="navbar" id="main-navbar" aria-label="Main Navigation">
+        <div class="nav-brand-row">
+          <a href="#hero" class="brand-logo" aria-label="Aniruddh Pratap Singh - Home">
+            <div class="brand-logo-frame">
+              <img src="Blue_Phoenix.jpg" alt="Blue Phoenix" class="brand-logo-img">
+              <span class="logo-glow-ring"></span>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Aniruddh</span>
+              <span class="brand-tag">QUANTUM</span>
+            </div>
+          </a>
+
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li><a href="#contact" class="nav-link nav-cta-btn">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section: Quantum Command Center -->
+      <section id="hero" class="hero-section">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>SYSTEM ONLINE &bull; OPEN TO HIGH-IMPACT OPPORTUNITIES</span>
+        </div>
+
+        <!-- 3D Orbital Gyroscope Avatar Core -->
+        <div class="hero-avatar-wrapper">
+          <div class="gyro-ring gyro-ring-outer"></div>
+          <div class="gyro-ring gyro-ring-inner"></div>
+          <div class="hero-avatar-glow"></div>
+          <div class="hero-avatar">
+            <i class="fas fa-atom atom-icon"></i>
+          </div>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Aniruddh Pratap Singh</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          <span class="mono-highlight">B.Sc. Chemistry</span> &bull; 
+          <span class="mono-highlight">Digital Systems Explorer</span> &bull; 
+          <span class="mono-highlight">Process Specialist</span>
+        </p>
+
+        <p class="hero-description">
+          Fascinated by the natural world and diving deep into the realm of differential possibilities. Bridging empirical chemistry with computational systems, high-accuracy data operations, and collaborative networks.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#experience" class="btn btn-primary">
+            <i class="fas fa-briefcase"></i> Explore Journey
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fas fa-paper-plane"></i> Initiate Contact
+          </a>
+        </div>
+
+        <div class="social-pills-row">
+          <a href="https://github.com/aniruddh-2004" target="_blank" rel="noopener noreferrer" class="social-pill" title="GitHub Profile">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/anurudh-pratap-singh-a968b2207" target="_blank" rel="noopener noreferrer" class="social-pill" title="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="mailto:kunwarvisvajeetsingh1234567@gmail.com" class="social-pill" title="Send Direct Email">
+            <i class="fas fa-envelope"></i> Email Me
+          </a>
+        </div>
+      </section>
+
+      <!-- Highlights / Metrics Bento Grid -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon-wrap">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="metric-info">
+            <h4>B.Sc. Chemistry</h4>
+            <p>Molecular Logic &amp; Scientific Deduction</p>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-wrap">
+            <i class="fas fa-network-wired"></i>
+          </div>
+          <div class="metric-info">
+            <h4>5+ Industry Roles</h4>
+            <p>Operations, Manufacturing &amp; Data</p>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-wrap">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="metric-info">
+            <h4>EV Tech Certified</h4>
+            <p>PMKK Govt. Skill Credential (2025)</p>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon-wrap">
+            <i class="fas fa-keyboard"></i>
+          </div>
+          <div class="metric-info">
+            <h4>28+ WPM Typing</h4>
+            <p>High-Precision Data Operations</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <section id="about">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-dna"></i> Core Identity</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="glass-card about-grid">
+          <div class="about-text">
+            <p>
+              I am a recent graduate with a <strong>B.Sc. Degree in Chemistry</strong>, fascinated by the physical universe and actively exploring the frontier of <em>differential possibilities</em>.
+            </p>
+            <div class="about-quote">
+              "Passionate about technology, mastering emerging systems, and deciphering how biological and logical architectures interconnect."
+            </div>
+            <p style="margin-top: 1.2rem; font-size: 0.98rem; color: var(--text-muted);">
+              Whether analyzing chemical structures, coordinating industrial assembly lines, or managing data pipelines, I bring disciplined observation, systematic troubleshooting, and relentless adaptability to every initiative.
+            </p>
+          </div>
+
+          <div class="about-features">
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fas fa-microscope"></i></div>
+              <div class="feature-info">
+                <h5>Scientific Deduction</h5>
+                <p>Evidence-based root cause diagnosis &amp; structural analysis</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fas fa-gears"></i></div>
+              <div class="feature-info">
+                <h5>Process Optimization</h5>
+                <p>Cross-functional throughput, compliance &amp; field coordination</p>
+              </div>
+            </div>
+            <div class="feature-box">
+              <div class="feature-icon"><i class="fas fa-brain"></i></div>
+              <div class="feature-info">
+                <h5>Rapid Assimilation</h5>
+                <p>Swift mastery of unfamiliar tools, technologies &amp; frameworks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chrono-Neural Work Experience Timeline -->
+      <section id="experience">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-timeline"></i> Chrono Timeline</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Vardhman Textile Plant -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="glass-card experience-card">
+              <div class="exp-header">
+                <h3 class="exp-company">Vardhman Textile Plant (AT-II)</h3>
+                <span class="badge badge-current"><i class="fas fa-circle-check"></i> Currently Working</span>
+              </div>
+              <div class="exp-role-row">
+                <span>Senior Assistant</span> &bull; <span>Baddi, HP</span>
+              </div>
+              <p class="exp-desc">
+                Facilitate optimal working conditions and floor throughput by guiding related officers, orchestrating departmental coordination, and maintaining stringent procedural standards.
+              </p>
+            </div>
+          </div>
+
+          <!-- Vision India Services -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="glass-card experience-card">
+              <div class="exp-header">
+                <h3 class="exp-company">Vision India Services Pvt Ltd</h3>
+                <span class="badge badge-past">2 Months</span>
+              </div>
+              <div class="exp-role-row">
+                <span>HR Support</span>
+              </div>
+              <p class="exp-desc">
+                Provided prospective talent recruitment support, managed candidate communication pipelines, and facilitated new employee onboarding operations.
+              </p>
+            </div>
+          </div>
+
+          <!-- BJP Sambad Kendra -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="glass-card experience-card">
+              <div class="exp-header">
+                <h3 class="exp-company">BJP Sambad Kendra</h3>
+                <span class="badge badge-past">6 Months</span>
+              </div>
+              <div class="exp-role-row">
+                <span>Agent</span> &bull; <span>Farrukhabad</span>
+              </div>
+              <p class="exp-desc">
+                Spearheaded field telemetry data management, telephone campaign communications, and synchronized coordination across operational field units.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kundkund Trading -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="glass-card experience-card">
+              <div class="exp-header">
+                <h3 class="exp-company">Kundkund Trading and Consultancy</h3>
+                <span class="badge badge-past">3 Months</span>
+              </div>
+              <div class="exp-role-row">
+                <span>Agent</span>
+              </div>
+              <p class="exp-desc">
+                Executed high-accuracy client data entry, record reconciliation, and managed incoming client consultations to preserve operational momentum.
+              </p>
+            </div>
+          </div>
+
+          <!-- Lava International -->
+          <div class="timeline-item">
+            <div class="timeline-node">
+              <div class="timeline-node-inner"></div>
+            </div>
+            <div class="glass-card experience-card">
+              <div class="exp-header">
+                <h3 class="exp-company">Lava International Pvt Ltd</h3>
+                <span class="badge badge-past">3 Months</span>
+              </div>
+              <div class="exp-role-row">
+                <span>Worker</span>
+              </div>
+              <p class="exp-desc">
+                Assisted in high-throughput electronics hardware assembly line operations and conducted meticulous quality control checks on finished mobile units.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Verified Certifications -->
+      <section id="education">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-graduation-cap"></i> Foundations</span>
+          <h2 class="section-title">Education &amp; <span class="gradient-text">Certifications</span></h2>
+        </div>
+
+        <div class="two-col-grid">
+          <!-- Academic Journey -->
+          <div class="glass-card">
+            <h3 class="category-title"><i class="fas fa-user-graduate"></i> Academic Journey</h3>
+            
+            <div class="edu-item">
+              <div class="edu-header">
+                <h4 class="edu-level">Graduation (B.Sc. Chemistry)</h4>
+                <span class="edu-year">2022 - 2025</span>
+              </div>
+              <p class="edu-institute">Ma. Kanshiram Govt. Degree College, Farrukhabad</p>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-header">
+                <h4 class="edu-level">Intermediate (10+2)</h4>
+                <span class="edu-year">2021 - 2022</span>
+              </div>
+              <p class="edu-institute">Jawahar Navodaya Vidyalaya (JNV), Anougi, Kannauj</p>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-header">
+                <h4 class="edu-level">Highschool (10th)</h4>
+                <span class="edu-year">2019 - 2020</span>
+              </div>
+              <p class="edu-institute">Jawahar Navodaya Vidyalaya (JNV), Rohilla</p>
+            </div>
+          </div>
+
+          <!-- Verified Certifications -->
+          <div class="glass-card">
+            <h3 class="category-title"><i class="fas fa-certificate"></i> Verified Certifications</h3>
+
+            <div class="cert-item">
+              <div class="cert-header">
+                <h4 class="cert-title">Electrical Vehicle Service Technician</h4>
+                <span class="cert-year">2025</span>
+              </div>
+              <p class="cert-issuer">Pradhan Mantri Kaushal Kendra (PMKK)</p>
+              <span class="cert-badge"><i class="fas fa-shield-halved"></i> Govt. Recognized EV Credential</span>
+            </div>
+
+            <div class="cert-item">
+              <div class="cert-header">
+                <h4 class="cert-title">Domestic Data Entry Operator</h4>
+                <span class="cert-year">2023</span>
+              </div>
+              <p class="cert-issuer">Pradhan Mantri Kaushal Kendra (PMKK)</p>
+              <span class="cert-badge"><i class="fas fa-shield-halved"></i> Certified Keyboard &amp; Data Operations</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Matrix Bento -->
+      <section id="skills">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-lightbulb"></i> Capabilities</span>
+          <h2 class="section-title">Skills &amp; <span class="gradient-text">Competencies</span></h2>
+        </div>
+
+        <div class="skills-container">
+          <!-- Computing & Office Systems -->
+          <div class="glass-card skill-category-card">
+            <h3 class="category-title"><i class="fas fa-laptop-code"></i> Computing &amp; Data Systems</h3>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip"><i class="fab fa-microsoft"></i> Microsoft Office Suite</span>
+              <span class="skill-chip"><i class="fas fa-file-excel"></i> Advanced Spreadsheet Management</span>
+              <span class="skill-chip"><i class="fas fa-keyboard"></i> 28+ WPM Typing Speed</span>
+              <span class="skill-chip"><i class="fas fa-database"></i> High-Accuracy Data Entry</span>
+              <span class="skill-chip"><i class="fas fa-globe"></i> Deep Web Research</span>
+            </div>
+          </div>
+
+          <!-- Technical & Engineering Hardware -->
+          <div class="glass-card skill-category-card">
+            <h3 class="category-title"><i class="fas fa-bolt"></i> Technical &amp; Engineering</h3>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip"><i class="fas fa-car-battery"></i> EV Technician Architecture</span>
+              <span class="skill-chip"><i class="fas fa-plug"></i> Electrical Engineering Knowledge</span>
+              <span class="skill-chip"><i class="fas fa-microchip"></i> Electronics Assembly</span>
+              <span class="skill-chip"><i class="fas fa-vial-circle-check"></i> Quality Control (QC)</span>
+              <span class="skill-chip"><i class="fas fa-atom"></i> Chemical Sciences</span>
+            </div>
+          </div>
+
+          <!-- Operations & Strategic Communication -->
+          <div class="glass-card skill-category-card">
+            <h3 class="category-title"><i class="fas fa-users-gear"></i> Operations &amp; Communication</h3>
+            <div class="skill-chips-wrap">
+              <span class="skill-chip"><i class="fas fa-headset"></i> Call Centre Experience</span>
+              <span class="skill-chip"><i class="fas fa-handshake"></i> Client Handling &amp; Relations</span>
+              <span class="skill-chip"><i class="fas fa-chalkboard-user"></i> Teaching (Bio, Math, English)</span>
+              <span class="skill-chip"><i class="fas fa-bullhorn"></i> Campaign Coordination</span>
+              <span class="skill-chip"><i class="fas fa-user-plus"></i> HR Operations Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hobbies & Personal Passions -->
+      <section id="hobbies">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-compass"></i> Explorations</span>
+          <h2 class="section-title">Hobbies &amp; <span class="gradient-text">Passions</span></h2>
+        </div>
+
+        <div class="hobbies-grid">
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap"><i class="fas fa-music"></i></div>
+            <span class="hobby-label">Listening to Music 🎶</span>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap"><i class="fas fa-compass"></i></div>
+            <span class="hobby-label">Learning Basics of New Scopes 🔬</span>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap"><i class="fas fa-globe"></i></div>
+            <span class="hobby-label">Internet Surfing 🌐</span>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap"><i class="fas fa-book-open"></i></div>
+            <span class="hobby-label">Reading Novels 📖</span>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap"><i class="fas fa-chess"></i></div>
+            <span class="hobby-label">Cricket, Free Fire &amp; Chess ♟️</span>
+          </div>
+
+          <div class="hobby-card">
+            <div class="hobby-icon-wrap"><i class="fas fa-bed"></i></div>
+            <span class="hobby-label">Sleeping &amp; Rest 😴</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transmission / Contact Hub -->
+      <section id="contact">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-satellite-dish"></i> Connect Terminal</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Email Transmission -->
+          <a href="mailto:kunwarvisvajeetsingh1234567@gmail.com" class="glass-card contact-card">
+            <div class="contact-icon-wrap email-wrap">
+              <i class="fas fa-envelope-open-text"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Direct Email Transmission</span>
+              <strong class="contact-card-val">kunwarvisvajeetsingh1234567@gmail.com</strong>
+            </div>
+            <span class="contact-card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <!-- GitHub Profile -->
+          <a href="https://github.com/aniruddh-2004" target="_blank" rel="noopener noreferrer" class="glass-card contact-card">
+            <div class="contact-icon-wrap github-wrap">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub Neural Repository</span>
+              <strong class="contact-card-val">Aniruddh-2004</strong>
+            </div>
+            <span class="contact-card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <!-- LinkedIn Profile -->
+          <a href="https://www.linkedin.com/in/anurudh-pratap-singh-a968b2207" target="_blank" rel="noopener noreferrer" class="glass-card contact-card">
+            <div class="contact-icon-wrap linkedin-wrap">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn Professional Network</span>
+              <strong class="contact-card-val">Aniruddh Pratap Singh</strong>
+            </div>
+            <span class="contact-card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <!-- Instagram Profile -->
+          <a href="https://www.instagram.com/__itz.rudra__29" target="_blank" rel="noopener noreferrer" class="glass-card contact-card">
+            <div class="contact-icon-wrap instagram-wrap">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Instagram Identity</span>
+              <strong class="contact-card-val">__itz.rudra__29</strong>
+            </div>
+            <span class="contact-card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <!-- Facebook Profile -->
+          <a href="https://www.facebook.com/share/194MPEUPk7/" target="_blank" rel="noopener noreferrer" class="glass-card contact-card">
+            <div class="contact-icon-wrap facebook-wrap">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Facebook Profile</span>
+              <strong class="contact-card-val">Aniruddh Pratap Singh</strong>
+            </div>
+            <span class="contact-card-arrow"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Celestial Minimalist Footer (No Bottom Nav Buttons) -->
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <div class="brand-logo-frame footer-logo-frame">
+          <img src="Blue_Phoenix.jpg" alt="Blue Phoenix" class="brand-logo-img">
+          <span class="logo-glow-ring"></span>
+        </div>
+        <span class="brand-name">Aniruddh Pratap Singh</span>
+      </div>
+
+      <p class="footer-copyright">
+        2026 &copy; <strong>Aniruddh Pratap Singh</strong>. All rights reserved.
+      </p>
+
+      <p class="footer-tagline">
+        Engineered at the Intersection of Natural Science &amp; Digital Architecture
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top" title="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Interactive Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
